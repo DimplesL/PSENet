@@ -43,15 +43,15 @@ def sit(img, path = None, name = ""):
         plt.imwrite(path, img)
     
     return path
-_count = 0;
+_count = 0
 
 def get_count():
-    global _count;
-    _count += 1;
+    global _count
+    _count += 1
     return _count    
 
 def cit(img, path = None, rgb = True, name = ""):
-    _count = get_count();
+    _count = get_count()
     if path is None:
         img = np.np.asarray(img, dtype = np.np.uint8)
         path = '~/temp/no-use/%s_%d_%s.jpg'%(log.get_date_str(), _count, name)
